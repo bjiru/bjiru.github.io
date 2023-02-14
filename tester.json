@@ -1,0 +1,26 @@
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+await lib.discord.channels['@0.3.2'].messages.create({
+  "channel_id": `${context.params.event.channel_id}`,
+  "content": "",
+  "tts": false,
+  "embeds": [
+    {
+      "type": "rich",
+      "title": `The Spectacle (Song) - MLP: Friendship Is Magic [HD]`,
+      "description": "",
+      "color": 0x00FFFF,
+      "image": {
+        "url": `https://i.ytimg.com/vi/VlUnqTP4ltY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDIFPUnc6dX_C_6CcOYey24TNSxnA`,
+        "proxy_url": `https://64.media.tumblr.com/18cef47bdf1d985525c5ec5d01ef0e93/e39cd77370cc94f0-5a/s540x810/d4d68d6b32bd4007a3e3bea138eebb9597e9b8df.jpg`,
+        "height": 0,
+        "width": 0
+      },
+      "author": {
+        "name": `Flutter525`,
+        "url": `https://64.media.tumblr.com/18cef47bdf1d985525c5ec5d01ef0e93/e39cd77370cc94f0-5a/s540x810/d4d68d6b32bd4007a3e3bea138eebb9597e9b8df.jpg`
+      },
+      "url": `https://64.media.tumblr.com/18cef47bdf1d985525c5ec5d01ef0e93/e39cd77370cc94f0-5a/s540x810/d4d68d6b32bd4007a3e3bea138eebb9597e9b8df.jpg`
+    }
+  ]
+});
